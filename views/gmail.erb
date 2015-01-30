@@ -1,41 +1,42 @@
 <!DOCTYPE html>
+<html>
 <head>
 	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.2-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="gmail.css">
 </head>
 
 <body>
-	<div class="row row-header"> <!--ROW-->
-		<div class="col-lg-2 logo"></div>
-		<div class="col-lg-7 search-bar">
-			<div class="search-bar-container">
-				<input type="text" class="form-control search">
+	<div class="container-fluid">
+		<div class="row row-header"> <!--ROW-->
+			<div class="col-sm-2 logo"></div>
+			<div class="col-sm-7 search-bar">
+				<div class="search-bar-container">
+					<input type="text" class="form-control search">
+				</div>
+				<button type="button" class="btn btn-blue"><span class="glyphicon glyphicon-search aria-hidden="true""></span></button>
 			</div>
-			<button type="button" class="btn btn-blue"><span class="glyphicon glyphicon-search aria-hidden="true""></span></button>
+			<div class="col-sm-3 profile">
+				<ul class="list-inline">
+					<li class="profile-1">+Sheonna</li>
+					<li class="profile-2">
+						<span class="glyphicon glyphicon-th" aria-hidden="true"></span>
+					</li>
+					<li class="profile-3">
+						<span class="glyphicon glyphicon-th" aria-hidden="true"></span>
+					</li>
+					<li class="profile-4">
+						<span class="glyphicon glyphicon-th" aria-hidden="true"></span>
+					</li>
+					<li class="profile-5">
+						<span class="glyphicon glyphicon-th" aria-hidden="true"></span>
+					</li>
+				</ul>
+			</div>
 		</div>
-		<div class="col-lg-3 profile">
-			<ul class="list-inline">
-				<li class="profile-1">+Sheonna</li>
-				<li class="profile-2">
-					<span class="glyphicon glyphicon-th" aria-hidden="true"></span>
-				</li>
-				<li class="profile-3">
-					<span class="glyphicon glyphicon-th" aria-hidden="true"></span>
-				</li>
-				<li class="profile-4">
-					<span class="glyphicon glyphicon-th" aria-hidden="true"></span>
-				</li>
-				<li class="profile-5">
-					<span class="glyphicon glyphicon-th" aria-hidden="true"></span>
-				</li>
-			</ul>
-		</div>
-	</div>
-
 		<div class="row row-sort"> <!--ROW-->
-			<div class="col-lg-10 sorting-container"> <!--SORTING CONTAINER-->
-				<div class="col-lg-3 gmail">Gmail<span class="glyphicon glyphicon-triangle-bottom"></span></div>
-				<div class="col-lg-3 sort-drop">
+			<div class="col-sm-12 sorting-container"> <!--SORTING CONTAINER-->
+				<div class="col-sm-2 gmail">Gmail<span class="glyphicon glyphicon-triangle-bottom"></span></div>
+				<div class="col-sm-5 sort-drop">
 					<ul class="list-inline">
 						<li>
 							<button class="btn btn-sort">
@@ -55,7 +56,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="col-lg-3 pages">
+				<div class="col-sm-5 pages">
 					<ul class="list-inline">
 						<li><p>1-29 of 29</p></li>
 						<li>
@@ -80,9 +81,9 @@
 		</div>
 
 		<div class="row email-row"> <!--ROW-->
-			<div class="col-lg-10 email-container"> <!--EMAIL CONTAINER-->
-				<div class="col-lg-3 email-folders"> <!--EMAIL FOLDERS-->
-					<button class="btn btn-lg btn-red">Compose</button>
+			<div class="col-sm-12 email-container"> <!--EMAIL CONTAINER-->
+				<div class="col-sm-2 email-folders"> <!--EMAIL FOLDERS-->
+					<button class="btn btn-sm btn-red">Compose</button>
 					<ul class="list-unstyled">
 						<li>Inbox<span class="inbox-badge">(5)</span></li>
 						<li>Sent Mail</li>
@@ -91,64 +92,88 @@
 						<li>Spam</li>
 					</ul>
 				</div>
-				<div class="col-lg-9 email-list"> <!--EMAILS-->
-					<div class="col-lg-3 email-flags">
-						<div class="email-flag-container">
-							<input class="email-flags-style" type="checkbox">
-							<span class="glyphicon glyphicon-star-empty email-flags-style"></span>
-							<span class="glyphicon glyphicon-tag email-flags-style"></span>
-						</div>
-						<div class="email-flag-container">
-							<input class="email-flags-style" type="checkbox">
-							<span class="glyphicon glyphicon-star-empty email-flags-style"></span>
-							<span class="glyphicon glyphicon-tag email-flags-style"></span>
-						</div>
-						<div class="email-flag-container">
-							<input class="email-flags-style" type="checkbox">
-							<span class="glyphicon glyphicon-star-empty email-flags-style"></span>
-							<span class="glyphicon glyphicon-tag email-flags-style"></span>
-						</div>
-						<div class="email-flag-container">
-							<input class="email-flags-style" type="checkbox">
-							<span class="glyphicon glyphicon-star-empty email-flags-style"></span>
-							<span class="glyphicon glyphicon-tag email-flags-style"></span>
-						</div>
-						<div class="email-flag-container">
-							<input class="email-flags-style" type="checkbox">
-							<span class="glyphicon glyphicon-star-empty email-flags-style"></span>
-							<span class="glyphicon glyphicon-tag email-flags-style"></span>
-						</div>
-					</div>
-					<div class="col-lg-3 email-subject">
-						<p>Javascript Weekly</p>
-						<p>Javascript Weekly</p>
-						<p>Javascript Weekly</p>
-						<p>Javascript Weekly</p>
-						<p>Javascript Weekly</p>
-					</div>
-					<div class="col-lg-5 email-text">
-						<p>This week's JavaScript news, issue 217 - <span class="email-preview">This week's JavaScript news Read this e-r</span></p>
-						<p>This week's JavaScript news, issue 217 - <span class="email-preview">This week's JavaScript news Read this e-r</span></p>
-						<p>This week's JavaScript news, issue 217 - <span class="email-preview">This week's JavaScript news Read this e-r</span></p>
-						<p>This week's JavaScript news, issue 217 - <span class="email-preview">This week's JavaScript news Read this e-r</span></p>
-						<p>This week's JavaScript news, issue 217 - <span class="email-preview">This week's JavaScript news Read this e-r</span></p>
-					</div>
-					<div class="col-lg-1 email-date">
-						<p>1:06pm</p>
-						<p>10:46am</p>
-						<p>Jan 23</p>
-						<p>Jan 8</p>
-						<p>12/24/14</p>
-					</div>
+				<div class="col-sm-10 email-list"> <!--EMAILS-->
+					<ul class="list-unstyled">
+						<li class="row-emails clearfix">
+							<div class="col-sm-2">
+								<div class="email-flag-container">
+									<input class="email-flags-style" type="checkbox">
+									<span class="glyphicon glyphicon-star-empty email-flags-style"></span>
+									<span class="glyphicon glyphicon-tag email-flags-style"></span>
+								</div>
+							</div>
+							<div class="col-sm-2"><p>Javascript Weekly</p></div>
+							<div class="col-sm-7">
+								<p>This week's JavaScript news, issue 217 - <span class="email-preview">This week's JavaScript news Read</span></p>
+							</div>
+							<div class="col-sm-1"><p>1:06pm</p></div>
+						</li>
+						<li class="row-emails clearfix">
+							<div class="col-sm-2">
+								<div class="email-flag-container">
+									<input class="email-flags-style" type="checkbox">
+									<span class="glyphicon glyphicon-star-empty email-flags-style"></span>
+									<span class="glyphicon glyphicon-tag email-flags-style"></span>
+								</div>
+							</div>
+							<div class="col-sm-2"><p>Javascript Weekly</p></div>
+							<div class="col-sm-7">
+								<p>This week's JavaScript news, issue 217 - <span class="email-preview">This week's JavaScript news Read</span></p>
+							</div>
+							<div class="col-sm-1"><p>1:06pm</p></div>
+						</li>
+						<li class="row-emails clearfix">
+							<div class="col-sm-2">
+								<div class="email-flag-container">
+									<input class="email-flags-style" type="checkbox">
+									<span class="glyphicon glyphicon-star-empty email-flags-style"></span>
+									<span class="glyphicon glyphicon-tag email-flags-style"></span>
+								</div>
+							</div>
+							<div class="col-sm-2"><p>Javascript Weekly</p></div>
+							<div class="col-sm-7">
+								<p>This week's JavaScript news, issue 217 - <span class="email-preview">This week's JavaScript news Read</span></p>
+							</div>
+							<div class="col-sm-1"><p>1:06pm</p></div>
+						</li>
+						<li class="row-emails clearfix">
+							<div class="col-sm-2">
+								<div class="email-flag-container">
+									<input class="email-flags-style" type="checkbox">
+									<span class="glyphicon glyphicon-star-empty email-flags-style"></span>
+									<span class="glyphicon glyphicon-tag email-flags-style"></span>
+								</div>
+							</div>
+							<div class="col-sm-2"><p>Javascript Weekly</p></div>
+							<div class="col-sm-7">
+								<p>This week's JavaScript news, issue 217 - <span class="email-preview">This week's JavaScript news Read</span></p>
+							</div>
+							<div class="col-sm-1"><p>1:06pm</p></div>
+						</li>
+						<li class="row-emails clearfix">
+							<div class="col-sm-2">
+								<div class="email-flag-container">
+									<input class="email-flags-style" type="checkbox">
+									<span class="glyphicon glyphicon-star-empty email-flags-style"></span>
+									<span class="glyphicon glyphicon-tag email-flags-style"></span>
+								</div>
+							</div>
+							<div class="col-sm-2"><p>Javascript Weekly</p></div>
+							<div class="col-sm-7">
+								<p>This week's JavaScript news, issue 217 - <span class="email-preview">This week's JavaScript news Read</span></p>
+							</div>
+							<div class="col-sm-1"><p>1:06pm</p></div>
+						</li>
+
+
+
+					</ul>
 				</div>
 			</div>
 		</div>
-	
+	</div>
 
-
-
-
-
-<script type="text/javascript" src="gmail.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="gmail.js"></script>
 </body>
 </html>

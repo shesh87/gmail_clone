@@ -9,18 +9,21 @@
 	background-image: url('//ssl.gstatic.com/gb/images/v1_376447c3.png');
 	background-repeat: no-repeat;
 	height: 33px;
-	width: 131px;
-	float: left;
 }
 .search-bar {
 	float: left;
+	padding-left: 34px;
+}
+.profile {
+	padding-right: 49px;
+	text-align: right;
 }
 .search-bar-container {
 	display: inline-block;
-	width: 89%;
+	width: 88%;
 }
 .search {
-	width: 570px;
+	width: 492px;
 	height: 28px;
 	display: inline-block;
 	border-radius: 0 !important;
@@ -29,7 +32,7 @@
 	border-radius: 0 !important;
 	padding: 3px 0 !important;
 	position: relative;
-	right: 4px;
+	right: 74px;
 	vertical-align: top;
 	width: 60px;
 	color: #fff;
@@ -57,7 +60,7 @@
 	height: 29px;
 }
 .pages {
-	float: right;
+	text-align: right;
 }
 .gmail, .sort-drop {
 	display: inline-block;
@@ -77,6 +80,12 @@
 .email-row {
 	margin: 0 auto;
 	padding-top: 10px;
+}
+.row-emails {
+	border-bottom: 1px solid #ccc;
+}
+.row-emails:first-child {
+	border-top: 1px solid #ccc;
 }
 .email-folders {
 	float: left;
@@ -117,4 +126,11 @@
 .email-flag-container {
 	display: block !important;
 	padding: 3px 0;
+}
+.js-checked {
+	background-color: #ffc;
+}
+.row-emails p {
+	margin: 0;
+	padding: 4px 0 3px 0;
 }

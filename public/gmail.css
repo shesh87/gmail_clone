@@ -1,0 +1,67 @@
+.row-header {
+	background-color: #f1f1f1;
+	height: 60px;
+	padding-top: 14px;
+}
+.logo {
+	background-position: 30px -1943px;
+	background-image: url('//ssl.gstatic.com/gb/images/v1_376447c3.png');
+	background-repeat: no-repeat;
+	height: 33px;
+	width: 131px;
+	float: left;
+}
+.search-bar {
+	float: left;
+}
+.search-bar-container {
+	display: inline-block;
+	width: 89%;
+}
+.search {
+	width: 570px;
+	height: 28px;
+	display: inline-block;
+	border-radius: 0 !important;
+}
+.btn-blue {
+	border-radius: 0 !important;
+	padding: 3px 0 !important;
+	position: relative;
+	right: 4px;
+	vertical-align: top;
+	width: 60px;
+	color: #fff;
+	background: #4285f4;
+	background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+	background: linear-gradient(top,#4387fd,#4683ea);
+}
+.profile-1 {
+	vertical-align: top;
+	padding-top: 5px;
+}
+/*.profile-2, .profile-3, .profile-4, .profile-5 {
+	background-position: 0 -597px;
+	background-image: url('//ssl.gstatic.com/gb/images/v1_376447c3.png');
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 30px;
+}*/
+.gmail {
+	color: #dd4b39;
+	font-size: 1.3em;
+}
+.btn-sort {
+	width: 72px;
+	height: 29px;
+}
+.gmail, .sort-drop, .pages {
+	display: inline-block;
+	float: left;
+}
+.row-sort .btn {
+	border-radius: 0 !important;
+	border: 1px solid #c6c6c6;
+color: #333;
+background-color: #ededed;
+}

@@ -14,3 +14,6 @@ set :session_secret, "super secret"
 
 
 
+get "/" do
+	erb :gmail
+end

@@ -23,7 +23,7 @@
 	width: 88%;
 }
 .search {
-	width: 492px;
+	width: 100%;
 	height: 28px;
 	display: inline-block;
 	border-radius: 0 !important;
@@ -31,8 +31,7 @@
 .btn-blue {
 	border-radius: 0 !important;
 	padding: 3px 0 !important;
-	position: relative;
-	right: 74px;
+	margin-left: -4px;
 	vertical-align: top;
 	width: 60px;
 	color: #fff;
@@ -134,3 +133,11 @@
 	margin: 0;
 	padding: 4px 0 3px 0;
 }
+.sort-drop li {
+	padding-right: 0 !important;
+}
+
+
+
+
+

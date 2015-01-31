@@ -7,7 +7,7 @@
 
 <body>
 	<div class="container-fluid">
-		<div class="row row-header"> <!--ROW-->
+		<div class="row row-header"> <!--ROW 1-->
 			<div class="col-sm-2 logo"></div>
 			<div class="col-sm-7 search-bar">
 				<div class="search-bar-container">
@@ -33,22 +33,59 @@
 				</ul>
 			</div>
 		</div>
-		<div class="row row-sort"> <!--ROW-->
+		<div class="row row-sort"> <!--ROW 2-->
 			<div class="col-sm-12 sorting-container"> <!--SORTING CONTAINER-->
-				<div class="col-sm-2 gmail">Gmail<span class="glyphicon glyphicon-triangle-bottom"></span></div>
-				<div class="col-sm-5 sort-drop">
+				<div class="col-sm-2 gmail">Gmail
+					<span class="glyphicon glyphicon-triangle-bottom"></span>
+				</div>
+				<div class="col-sm-6 sort-drop js-sort-drop1">
 					<ul class="list-inline">
 						<li>
 							<button class="btn btn-sort">
-								<span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
-								<span class="glyphicon glyphicon-triangle-bottom"></span>
+								<div class="js-sort">
+									<span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+									<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+								</div>
+									<span class="glyphicon glyphicon-minus js-selected" aria-hidden="true" style="display: none;"></span>
 							</button>
 						</li>
 						<li>
-							<button class="btn btn-sort">
+							<button class="btn btn-sort js-remove">
 								<span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
 							</button>
 						</li>
+
+
+						<!--HIDDEN SORT BUTTONS-->
+						<li class="js-hidden-sort" style="display: none;">
+							<div class="btn-group">
+								<button class="btn btn-sort">
+									<span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
+								</button>
+								<button class="btn btn-sort">
+									<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+								</button>
+								<button class="btn btn-sort">
+									<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+								</button>
+							</div>
+						</li>
+						<li class="js-hidden-sort" style="display: none;">
+							<div class="btn-group">
+								<button class="btn btn-sort">
+									<span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>
+									<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+								</button>
+								<button class="btn btn-sort">
+									<span class="glyphicon glyphicon-tag" aria-hidden="true"></span>
+									<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+								</button>
+							</div>
+						</li>
+						<!--END OF HIDDEN SORT BUTTONS-->
+
+
+
 						<li>
 							<button class="btn btn-sort">
 								<P>More<span class="glyphicon glyphicon-triangle-bottom"></span></P>
@@ -56,7 +93,8 @@
 						</li>
 					</ul>
 				</div>
-				<div class="col-sm-5 pages">
+
+				<div class="col-sm-4 pages">
 					<ul class="list-inline">
 						<li><p>1-29 of 29</p></li>
 						<li>
@@ -80,7 +118,7 @@
 			</div>
 		</div>
 
-		<div class="row email-row"> <!--ROW-->
+		<div class="row email-row"> <!--ROW 3-->
 			<div class="col-sm-12 email-container"> <!--EMAIL CONTAINER-->
 				<div class="col-sm-2 email-folders"> <!--EMAIL FOLDERS-->
 					<button class="btn btn-sm btn-red">Compose</button>
@@ -97,7 +135,7 @@
 						<li class="row-emails clearfix">
 							<div class="col-sm-2">
 								<div class="email-flag-container">
-									<input class="email-flags-style" type="checkbox">
+									<input class="email-flags-style" id="js-email-selected" type="checkbox">
 									<span class="glyphicon glyphicon-star-empty email-flags-style"></span>
 									<span class="glyphicon glyphicon-tag email-flags-style"></span>
 								</div>

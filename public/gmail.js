@@ -1,12 +1,14 @@
-$( "input:checkbox" ).on('click', function () {
+$( "input.js-email" ).on('click', function () {
 	$(this).parents('li').toggleClass('js-checked');
-	$('.js-selected, .js-sort').toggle();
-	$('.js-remove, .js-hidden-sort').toggle();
-	// if ("input:checkbox").is(':checked') === true {
-	// 	alert("yes");
-	// } else {
-	// 	console.log("no");
-	// }
+	if ($('.js-email').is(':checked')) {
+		// alert("yes");
+		$('.js-sort, .js-remove').hide();
+		$('.js-selected, .js-hidden-sort').show();
+	} else{
+		// alert("no");
+		$('.js-sort, .js-remove').show();
+		$('.js-selected, .js-hidden-sort').hide();
+	};
 });
 
 
